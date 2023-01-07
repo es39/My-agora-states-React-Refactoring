@@ -1,23 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import { useState, useEffect } from 'react'
 
-function App() {
+import { Form } from './Components/Form'
+import { Discussions } from './Components/Discussions'
+import Footer from './Footer'
+
+
+
+export function App() {
+  const [discussions, setDiscussions] = useState([]);
+  
+  useEffect(() => {
+    fetch("http://localhost:4000")
+    .then(res => res.json())
+    .then(data => {
+      setDiscussions(data)
+    }, [])
+  })
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org" 
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <main>
+          <section>
+            <Form />
+            <Discussions discussions={discussions}/>
+          </section>
+        </main>
+        <Footer />
     </div>
   );
 }
