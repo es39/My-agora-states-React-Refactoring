@@ -1,15 +1,17 @@
-// TODO : useState를 react로 부터 import 합니다.
+import styled from 'styled-components';
 import React, { useState } from 'react';
-import Footer from '../Footer';
+import '../index.css';
 
-export const Discussions = (props) => {
+import { Discussion } from './Discussion';
+
+export const Discussions = ({ discussions }) => {
     return(
-        <section class="discussion__wrapper">
-            <ul class="discussions__container">
-                
+        <section className="discussion__wrapper">
+            <ul className="discussions__container">
+                {discussions.map(discussion => {
+                 return <Discussion discussion={discussion} key={discussion.id}></Discussion>
+                })}
             </ul>
         </section>
-    )
-};
-
-export default Discussions;
+    );
+}
