@@ -11,3 +11,116 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* TODO: 보기 좋은 나만의 아고라 스테이츠를 위해서 CSS를 수정하세요. */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'font';
+  src: url('./Font/Asia신디나루M.ttf') format('truetype');
+}
+
+body {
+  background-image: url('./Image/background1.png'); 
+  background-position: 100% 100%;
+  font-family: 'font';
+  letter-spacing: -3px;
+  display: flex;
+  position: relative;
+  background-size: cover;
+}
+
+main {
+  margin: 0 auto;
+  /* width: 540px; */   
+}
+
+h1 {
+  text-align: center;
+  font-size: 40px;
+  padding: 10px;
+  background-color: white;
+}
+
+h2 {
+  font-size: 1.3em;
+  padding: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 0.9em;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #00A057;
+}
+
+#story {
+  resize: none;
+  height: 70px;
+  border-radius: 10px;
+  border: 2px solid #00A057;
+}
+
+
+
+ul.discussions__container > li:hover {
+  background-color: #FEFFB7;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.discussions__container {
+  list-style-type: none;
+  background-color: white;
+  overflow: auto;
+  height: 540px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.4);
+}
+
+.discussion__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 15px 0px;
+  width: 540px;
+  padding: 10px;
+}
+
+.discussions__container::-webkit-scrollbar {
+  display: none;
+}
+
+.discussion__content div {
+  text-align: right;
+}
+
+.discussion__avatar--wrapper img {
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 100%;
+  width: 64px;
+}
+
+.discussion__content {
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+  justify-content: space-between;
+}
+
+.discussion__wrapper p {
+  font-size: 20px;
+}
+
