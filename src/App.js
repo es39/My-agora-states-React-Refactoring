@@ -1,18 +1,21 @@
 import './App.css';
+import './index.css'
 import React from 'react';
 import { useState, useEffect } from 'react'
 
-import { Form } from './Components/Form'
+import { Form }  from './Components/Form'
 import { Discussions } from './Components/Discussions'
+import Discussion from './Components/Discussion'
 import Footer from './Footer'
+import GlobalStyle from './GlobalStyle';
 
 
 
-export function App() {
+function App() {
   const [discussions, setDiscussions] = useState([]);
   
   useEffect(() => {
-    fetch("http://localhost:4000")
+    fetch("http://localhost:4000/discussions")
     .then(res => res.json())
     .then(data => {
       setDiscussions(data)
@@ -20,12 +23,13 @@ export function App() {
   })
 
   return (
-    <div className="App">
+    <div>
         <main>
           <section>
+            <GlobalStyle />
             <Form />
             <Discussions discussions={discussions}/>
-          </section>
+            </section>
         </main>
         <Footer />
     </div>
