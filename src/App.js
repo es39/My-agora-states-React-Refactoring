@@ -27,7 +27,7 @@ function App() {
         <main>
           <section>
             <GlobalStyle />
-            <Form />
+            <Form discussions={discussions} setDiscussions={setDiscussions}/>
             <Discussions discussions={discussions}/>
             </section>
         </main>
