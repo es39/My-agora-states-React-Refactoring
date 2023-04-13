@@ -1,18 +1,16 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
-
-/* TODO: 보기 좋은 나만의 아고라 스테이츠를 위해서 CSS를 수정하세요. */
 
 * {
   margin: 0;
@@ -21,14 +19,14 @@ code {
 }
 
 @font-face {
-  font-family: 'font';
-  src: url('./Font/Asia신디나루M.ttf') format('truetype');
+  font-family: "font";
+  src: url("./Font/Asia신디나루M.ttf") format("truetype");
 }
 
 body {
-  background-image: url('./Image/background1.png'); 
+  background-image: url("./Image/background1.png");
   background-position: 100% 100%;
-  font-family: 'font';
+  font-family: "font";
   letter-spacing: -3px;
   display: flex;
   position: relative;
@@ -37,7 +35,7 @@ body {
 
 main {
   margin: 0 auto;
-  /* width: 540px; */   
+  /* width: 540px; */
 }
 
 h1 {
@@ -60,25 +58,21 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: #00A057;
+  color: #00a057;
 }
 
 #story {
   resize: none;
   height: 70px;
   border-radius: 10px;
-  border: 2px solid #00A057;
+  border: 2px solid #00a057;
 }
 
-
-
 ul.discussions__container > li:hover {
-  background-color: #FEFFB7;
+  background-color: #feffb7;
   border-radius: 30px;
   cursor: pointer;
 }
-
-
 
 .discussion__container {
   display: flex;
@@ -88,7 +82,6 @@ ul.discussions__container > li:hover {
   width: 540px;
   padding: 10px;
 }
-
 
 .discussion__content div {
   text-align: right;
@@ -111,4 +104,3 @@ ul.discussions__container > li:hover {
 .discussion__wrapper p {
   font-size: 20px;
 }
-
