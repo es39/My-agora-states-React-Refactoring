@@ -1,67 +1,45 @@
+.form__input--wrapper div {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+}
 
-  
-  .form__input--wrapper div {
-    display: flex;
-    flex-direction: column;
-    padding: 5px;
-  }
-  
-  .form__input--wrapper input {
-    display: flex;
-    flex-direction: column;
-    height: 30px;
-  }
-  
-  .form__input--wrapper textarea {
-    padding: 5px;
-  }
-  
-  .form__submit input {
-    margin: 10px;
-    height: 32px;
-    width: 88px;
-  }
-  
-  .form__submit input:focus {
-    outline: none;
-    border: none;
-  }
-  
-  .form__submit input:hover {
-    cursor: pointer;
-    background-color: #f8f8f8;
-  }
-  
-  .form__submit input:active {
-    outline: none;
-    background-image: url('../Image/submit-btn.png'); 
-  }
-  
-  /* input.submit[type="submit"]:hover {
-    background-image: url('./image/submit-btn.png'); 
-  } */
-  
-  .form__container {
-    margin-top: 10px;
-    align-items: center;
-    text-align: center;
-    background-color: white;
-    border-radius: 20px;
-    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.4);
-  }
-  
-  .form__input--name input {
-    border-left-width: 0;
-    border-right-width: 0;
-    border-top-width: 0;
-    border-bottom-width: 1;
-    border-bottom-color: #00A057;
-  }
-  
-  .form__input--title input {
-    border-left-width: 0;
-    border-right-width: 0;
-    border-top-width: 0;
-    border-bottom-width: 1;
-    border-bottom-color: #00A057;
+.form__input--wrapper input {
+  display: flex;
+  flex-direction: column;
+  height: 30px;
+}
+
+.form__input--wrapper textarea {
+  padding: 5px;
+}
+
+.form__submit input {
+  margin: 10px;
+  height: 32px;
+  width: 88px;
+}
+
+.form__submit input:focus {
+  outline: none;
+  border: none;
+}
+
+.form__submit input:hover {
+  cursor: pointer;
+  background-color: #f8f8f8;
+}
+
+.form__submit input:active {
+  outline: none;
+  background-image: url("../Image/submit-btn.png");
+}
+
+.form__container {
+  margin-top: 10px;
+  align-items: center;
+  text-align: center;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.4);
 }

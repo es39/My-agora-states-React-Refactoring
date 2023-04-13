@@ -103,4 +103,18 @@ const FormInputWrapper = styled.div`
   width: 500px;
   flex-direction: column;
   justify-content: space-around;
+  .form__input--name input {
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 1;
+    border-bottom-color: #00a057;
+  }
+  .form__input--title input {
+    border-left-width: 0;
+    border-right-width: 0;
+    border-top-width: 0;
+    border-bottom-width: 1;
+    border-bottom-color: #00a057;
+  }
 `;
